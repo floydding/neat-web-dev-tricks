@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #root {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <select>
+        <!--
+          real option should have aria description the same as
+          content in description option for A11y purpose
+
+          &nbsp; -> whitespace
+          &#x21AA; -> down right arrow
+        -->
+        <option aria-description="Description for Option 1">Option 1</option>
+        <option disabled aria-hidden="true">
+          &nbsp;&nbsp;&nbsp;&#x21AA; Description for Option 1
+        </option>
+        <option aria-description="Description for Option 2">Option 2</option>
+        <option disabled aria-hidden="true">
+          &nbsp;&nbsp;&nbsp;&#x21AA; Description for Option 2
+        </option>
+        <option aria-description="Description for Option 3">Option 3</option>
+        <option disabled aria-hidden="true">
+          &nbsp;&nbsp;&nbsp;&#x21AA; Description for Option 3
+        </option>
+      </select>
+    </div>
+  </body>
+</html>
